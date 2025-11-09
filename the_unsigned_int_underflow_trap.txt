@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    unsigned int i;
+    for (i = 5; i >= 0; i--) {
+        printf("%d ", i);
+    }
+    printf("\n");
+    return 0;
+}
+\\
+Output:
+\\
+5 4 3 2 1 0 [... to ∞]

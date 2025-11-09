@@ -1,0 +1,21 @@
+\\Buggy Code:
+#include <stdio.h>
+int main() {
+    int i;
+    for (i = 0; i = 5; i++) {
+        printf("Hello\n");
+    }
+    return 0;
+}
+
+\\Error: I accidentally wrote i = 5 in the condition part instead of i < 5. The single equal sign fixes 5 to i, and since 5 is a non-zero value, it's always true. So the loop never stops and keeps running forever. I should have used the comparison operator instead.
+
+\\Fixed Code:
+#include <stdio.h>
+int main() {
+    int i;
+    for (i = 0; i < 5; i++) {
+        printf("Hello\n");
+    }
+    return 0;
+}
